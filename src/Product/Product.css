@@ -1,0 +1,250 @@
+body{
+    position: relative;
+}
+
+.full-prod{
+    position: absolute;
+    top:90px;
+    left: 120px;
+   width: 1080px;
+   margin: 9px auto;
+   display: flex;
+   justify-content: space-between;
+   
+}
+
+.full-prod div {
+    width: 100%;
+    margin: 0 15px;
+    display: flex;
+    
+}
+
+.mainImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+}
+.mainImg img{
+    width: 390px;
+    height: 390px;
+    border-radius: 5%;
+    margin-top:15px ;
+    cursor: pointer;
+}
+
+.cursor-right,.cursor-left {
+    display: none;
+}
+
+
+.mainImg ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    padding:0;
+    margin: 5px 0;    
+}
+
+.mainImg ul li img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.content{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content .container{
+max-width: 400px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-left: 10px;
+}
+
+
+.content span {
+    text-transform: uppercase;
+    color: hsl(26, 100%, 55%);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.content h1 {
+    color: hsl(220, 13%, 13%);
+    padding: 20px 0;
+    margin: 0;
+}
+
+.content p {
+    color: hsl(219, 9%, 45%);
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+}
+
+ h2 {
+    padding: 0;
+    margin: 25px 0 0 0;
+    display: flex;
+    align-items: center;
+}
+h2 .discount{
+    background-color: hsl(25, 100%, 94%);
+    width: 35px;
+    height: 20px;
+    border-radius: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2 .discount span {
+    color: hsl(26, 100%, 55%);
+    font-size: 12px;
+    font-weight: bolder;
+    letter-spacing:normal;
+}
+
+p.oldprice {
+    font-size: 12px;
+    text-decoration: line-through;
+    font-weight:400;
+    margin-top: 5px;
+}
+div.cart-process {
+    padding: 0;
+    margin: 20px 0;
+}
+
+div.counter {
+    background-color:hsl(223, 64%, 98%);
+    width:160px;
+    height: 15px;
+    border-radius: 5%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    font-weight: bold;
+    font-size: 12px;
+}
+div.counter button {
+    border: 0;
+    background: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: hsl(26, 100%, 55%);
+    cursor: pointer;
+    
+}
+
+div.addToCart button{
+    background-color: hsl(26, 100%, 55%);
+    border: 0;
+    color: hsl(0, 0%, 100%);
+    width: 200px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+div.addToCart button .cart {
+    margin-right: 110px;
+}
+
+.full-prod .mainImg .overlay{
+    width:100%;
+    height: 100vh;
+    z-index: 999;
+    opacity: 0;
+}
+.full-prod .mainImg .overlay:hover{opacity: 1;}
+
+
+div.overlay{
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.514);
+    height: 100vh;
+    width: 100%;
+    z-index: 99;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+} 
+
+
+
+div.overlay img {
+    width: 380px;
+    height: 380px;
+    border-radius: 5%;
+    margin-top:15px ;
+    cursor: pointer;
+
+}
+div.overlay ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    padding:0;
+    margin: 5px 0;
+    justify-content: center;   
+}
+
+div.overlay ul  li img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+div.overlay .close {
+    cursor: pointer;
+    
+}
+
+div.overlay .align {
+    width: 350px;
+    text-align: end;
+   
+
+}
+div.hidden{
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+
+}
+
+.imageSlider {
+    display: flex;
+    align-items: center;
+    color: white;
+    
+}
+.imageSlider img {
+    margin: 10px;
+}
